@@ -1,5 +1,20 @@
 # Walmart Customer Analytics
 
+## AI Agent-Assisted Project
+
+This project was completed with assistance from an AI coding agent. The agent helped to:
+
+- initialize and configure the Python project with `uv`
+- install the PostgreSQL dependency
+- inspect the Ghost-managed databases
+- load the Walmart CSV data into the PostgreSQL `raw` schema
+- create tables from `walmart_dataset/ddl/walmart_schema.sql`
+- write and run ad hoc SQL analysis
+- implement the top-customers Python query
+- document the workflow and results for reproducibility
+
+The detailed workflow and evidence notes are available in [AGENT_EXECUTION_RECORD.md](AGENT_EXECUTION_RECORD.md).
+
 This project contains a PostgreSQL analytics workflow built from the Walmart dataset. Data was loaded into a Ghost-managed PostgreSQL database, tables were created from the DDL, and ad hoc analysis was run through the database connection.
 
 ## What Was Implemented
