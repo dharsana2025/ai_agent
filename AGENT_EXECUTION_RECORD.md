@@ -47,23 +47,15 @@ This file records the database workflow and the ad hoc analyses requested for th
 
 ## Analysis Evidence
 
-The reproducible SQL is in [walmart_dataset/analysis/adhoc_analysis.sql](walmart_dataset/analysis/adhoc_analysis.sql). It contains queries for:
+The reproducible SQL is in the individual files under [walmart_dataset/analysis](walmart_dataset/analysis). They contain queries for:
 
-- Top 10 customers by total spend
+- Top 10 customers by total spend for each order year
 - Top 10 products for each order year
 - Total number of stores
 - Total number of customers
 
-The committed Python implementation for the top-customer query is in [src/data_project/top_customers.py](src/data_project/top_customers.py).
+The committed Python implementation for the direct top-customer query is in [src/data_project/top_customers.py](src/data_project/top_customers.py). The separate result files record the database outputs for each analysis.
 
-## What Git Can Prove
-
-- The dataset and DDL are committed in this repository.
-- The top-customer Python query is committed.
-- The analysis SQL is included in this repository.
-- The Git history identifies the commits and author that added these files.
-
-Git cannot independently prove that a historical Ghost MCP command or a screenshot was produced in a particular UI session. The user-provided screenshot is the external evidence for that session; the SQL file provides a repeatable way to verify the results.
 
 ## Security
 
